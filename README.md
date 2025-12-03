@@ -14,32 +14,37 @@
       width: 100%;
       height: 100%;
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: center;
-      overflow: hidden;
+      overflow-y: auto;
+      overflow-x: hidden;
     }
 
     .app-container {
       width: 100%;
-      max-width: 500px;
-      padding: 40px 30px;
+      max-width: 420px;
+      padding: 20px 20px 30px 20px;
       text-align: center;
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     .header {
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
 
     .app-title {
-      font-size: 32px;
+      font-size: 26px;
       font-weight: 700;
       color: #1976D2;
-      margin: 0 0 10px 0;
+      margin: 0 0 8px 0;
       letter-spacing: -0.5px;
     }
 
     .app-subtitle {
-      font-size: 14px;
+      font-size: 13px;
       color: #64B5F6;
       margin: 0;
       font-weight: 500;
@@ -47,12 +52,13 @@
 
     .timer-container {
       position: relative;
-      margin: 40px auto;
+      margin: 20px auto;
+      flex: 0 0 auto;
     }
 
     .timer-circle {
-      width: 280px;
-      height: 280px;
+      width: 240px;
+      height: 240px;
       margin: 0 auto;
       background: linear-gradient(145deg, #ffffff, #f0f0f0);
       border-radius: 50%;
@@ -81,7 +87,7 @@
     }
 
     .timer-display {
-      font-size: 56px;
+      font-size: 48px;
       font-weight: 700;
       color: #1976D2;
       margin: 0;
@@ -90,29 +96,30 @@
     }
 
     .timer-status {
-      font-size: 16px;
+      font-size: 14px;
       color: #64B5F6;
-      margin-top: 12px;
+      margin-top: 10px;
       font-weight: 500;
     }
 
     .icon-focus {
-      font-size: 36px;
+      font-size: 32px;
       margin-bottom: 8px;
     }
 
     .controls {
       display: flex;
-      gap: 15px;
+      gap: 12px;
       justify-content: center;
-      margin-top: 30px;
+      margin-top: 20px;
+      flex: 0 0 auto;
     }
 
     .btn {
-      padding: 14px 32px;
+      padding: 12px 28px;
       border: none;
       border-radius: 25px;
-      font-size: 16px;
+      font-size: 15px;
       font-weight: 600;
       cursor: pointer;
       transition: all 0.3s ease;
@@ -141,55 +148,59 @@
 
     .stats-container {
       display: flex;
-      gap: 20px;
+      gap: 12px;
       justify-content: center;
-      margin-top: 40px;
+      margin-top: 25px;
+      flex: 0 0 auto;
     }
 
     .stat-card {
       background: white;
-      padding: 20px 30px;
-      border-radius: 20px;
+      padding: 16px 24px;
+      border-radius: 18px;
       box-shadow: 0 4px 15px rgba(33, 150, 243, 0.1);
-      min-width: 140px;
+      flex: 1;
+      max-width: 160px;
     }
 
     .stat-icon {
-      font-size: 28px;
-      margin-bottom: 8px;
+      font-size: 24px;
+      margin-bottom: 6px;
     }
 
     .stat-value {
-      font-size: 28px;
+      font-size: 24px;
       font-weight: 700;
       color: #1976D2;
-      margin: 5px 0;
+      margin: 4px 0;
     }
 
     .stat-label {
-      font-size: 13px;
+      font-size: 12px;
       color: #90CAF9;
       font-weight: 500;
     }
 
     .gamification-info {
       background: linear-gradient(135deg, #FFF9C4, #FFF59D);
-      padding: 16px 24px;
-      border-radius: 20px;
-      margin-top: 30px;
+      padding: 14px 20px;
+      border-radius: 18px;
+      margin-top: 20px;
       box-shadow: 0 4px 12px rgba(255, 193, 7, 0.2);
       border: 2px solid #FFE082;
+      flex: 0 0 auto;
     }
 
     .gamification-info .emoji {
-      font-size: 24px;
-      margin-right: 8px;
+      font-size: 20px;
+      margin-right: 6px;
     }
 
     .gamification-info .text {
-      font-size: 15px;
+      font-size: 13px;
       color: #F57F17;
       font-weight: 600;
+      line-height: 1.4;
     }
 
     .warning-overlay {
@@ -223,48 +234,49 @@
 
     .warning-modal {
       background: white;
-      padding: 40px 50px;
-      border-radius: 30px;
+      padding: 30px 35px;
+      border-radius: 25px;
       box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
       text-align: center;
-      max-width: 400px;
+      max-width: 320px;
+      margin: 0 20px;
       animation: shake 0.5s ease;
     }
 
     .warning-icon {
-      font-size: 64px;
-      margin-bottom: 20px;
+      font-size: 56px;
+      margin-bottom: 16px;
     }
 
     .warning-title {
-      font-size: 24px;
+      font-size: 20px;
       font-weight: 700;
       color: #EF5350;
-      margin: 0 0 15px 0;
+      margin: 0 0 12px 0;
     }
 
     .warning-message {
-      font-size: 16px;
+      font-size: 14px;
       color: #666;
-      margin: 0 0 25px 0;
+      margin: 0 0 20px 0;
       line-height: 1.5;
     }
 
     .warning-timer {
-      font-size: 48px;
+      font-size: 40px;
       font-weight: 700;
       color: #1976D2;
-      margin: 20px 0;
+      margin: 16px 0;
       opacity: 0.5;
     }
 
     .btn-back {
       background: linear-gradient(135deg, #66BB6A, #4CAF50);
       color: white;
-      padding: 14px 40px;
+      padding: 12px 32px;
       border: none;
       border-radius: 25px;
-      font-size: 16px;
+      font-size: 15px;
       font-weight: 600;
       cursor: pointer;
       box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
@@ -285,27 +297,49 @@
       50% { transform: scale(1.05); }
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 380px) {
       .app-container {
-        padding: 30px 20px;
+        padding: 16px 16px 24px 16px;
+      }
+
+      .app-title {
+        font-size: 24px;
       }
 
       .timer-circle {
-        width: 240px;
-        height: 240px;
+        width: 220px;
+        height: 220px;
       }
 
       .timer-display {
-        font-size: 48px;
-      }
-
-      .stats-container {
-        flex-direction: column;
-        gap: 15px;
+        font-size: 44px;
       }
 
       .stat-card {
-        min-width: auto;
+        padding: 14px 20px;
+      }
+
+      .stat-value {
+        font-size: 22px;
+      }
+
+      .btn {
+        padding: 10px 24px;
+        font-size: 14px;
+      }
+
+      .gamification-info {
+        padding: 12px 16px;
+      }
+
+      .gamification-info .text {
+        font-size: 12px;
+      }
+    }
+
+    @media (min-width: 381px) and (max-width: 600px) {
+      .app-container {
+        padding: 20px;
       }
     }
   </style>
@@ -593,5 +627,5 @@
 
     updateDisplay();
   </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9a845c64f5de8995',t:'MTc2NDc3ODUwNy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9a8474316543fd8f',t:'MTc2NDc3OTQ4Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
